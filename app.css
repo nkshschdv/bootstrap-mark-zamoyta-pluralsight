@@ -2,7 +2,7 @@
     font-family: 'Open-Sans', sans-serif;   
 }
 header, footer {
-    background-color: rgb(119, 115, 115);
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
@@ -61,4 +61,14 @@ article{
 .sports-icon-list img{
 width:70px;
 height: 70px;
+}
+.sports-list-top div{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.sports-list-top a{
+     margin-left: 30px;
+     margin-right: 30px;
+     display: inline-block;
 }
