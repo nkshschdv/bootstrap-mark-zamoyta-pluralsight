@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 body{
-    margin-top:100px;
     width: 100%;
     height: 100%;
 }
@@ -25,6 +24,12 @@ body{
     width: 360px;
     height: 50px;
     padding-bottom: 5px;
+}
+.fill-screen{
+    background-image: url("Images/lake.jpg");    
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
  footer {
