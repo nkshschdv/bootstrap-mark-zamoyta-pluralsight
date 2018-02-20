@@ -9,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+
     <script src="app.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <header id ="video-wallpaper">
+    <header id="video-wallpaper">
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +58,7 @@
         </nav>
     </header>
     <div class="container-fluid">
-            <!-- <video  autoplay loop muted poster="images/ocean.jpg" id="background">
+        <!-- <video  autoplay loop muted poster="images/ocean.jpg" id="background">
                     <source src="videos/ocean.mp4" type="video/mp4">
                 </video> -->
         <div class="content-filler"></div>
@@ -76,7 +77,7 @@
 
     </div>
 
-    
+
     <footer class="container-fluid ">
         <div class="row">
             <div class="col-xs-12">
@@ -86,26 +87,26 @@
 
         </div>
     </footer>
-    
+
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/jquery.fs.wallpaper.min.js"></script>
     <script>
-         $(function () {
+        $(function () {
             $(window).on("load resize", function () {
                 $(".fill-screen").css("height", window.innerHeight);
             })
             $("#video-wallpaper").wallpaper({
-        source: {
-        poster: "images/ocean.jpg",
-    mp4: "videos/ocean.mp4" 
-        // ,
-        // webm: "http://example.com/video.mp4",
-        // ogg: "http://example.com/video.ogv"
-    }
-});
+                source: {
+                    
+                    video: "https://www.youtube.com/embed/xOqH8yHtFRc",
+                    // ,
+                    // webm: "http://example.com/video.mp4",
+                    // ogg: "http://example.com/video.ogv"
+                }
+            });
         });
-       
+
     </script>
 </body>
 
