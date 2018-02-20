@@ -1,11 +1,38 @@
 *{
     font-family: 'Open-Sans', sans-serif;   
+    box-sizing: border-box;
 }
-header, footer {
+body{
+    margin-top:100px;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    margin-bottom: 0px;
+    padding: 30px 15px;
+    -webkit-transition: all 0.5;
+    transition: all 0.5s;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color: #bbb;
+}
+.cbp-af-header-shrink{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 0.9;
+}
+.navbar img{
+    width: 360px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+
+ footer {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 aside {
     background-color: #f7f7f7;
@@ -124,5 +151,17 @@ height: 70px;
     .col-lg-height {
         display:table-cell;
         float:none;
+    }
+}
+@media(max-width:500px){
+    .navbar-header{
+        position: relative;
+    }
+    .navbar img{
+        width: 70% ;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        
     }
 }
