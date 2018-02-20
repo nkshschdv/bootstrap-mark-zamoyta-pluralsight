@@ -26,12 +26,15 @@ body{
     padding-bottom: 5px;
 }
 .fill-screen{
-    background-image: url("Images/lake.jpg");    
     background-size: cover;
     background-position: center;
-    height: 100%;
 }
-
+.content-filler{
+    height: 350px;
+}
+.fixed-attachment{
+    background-attachment: fixed;
+}
  footer {
     background-color: #333;
     color: white;

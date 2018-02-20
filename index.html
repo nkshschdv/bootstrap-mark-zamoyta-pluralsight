@@ -13,6 +13,7 @@
     <script src="app.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
@@ -56,15 +57,29 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="fill-screen">
-                
+            <div class="fill-screen fixed-attachment" style="    background-image: url('Images/lake.jpg');">
+
             </div>
         </div>
+        <div class="content-filler"></div>
+
+        <div class="row">
+            <div class="fill-screen fixed-attachment" style="  background-image: url('Images/elk.jpg');">
+
+            </div>
+        </div>
+        <div class="content-filler"></div>
+        <div class="row">
+            <div class="fill-screen fixed-attachment" style="  background-image: url('Images/snowboarder.jpg');">
+
+            </div>
+        </div>
+
     </div>
     <script>
-        $(function(){
-            $(window).on("load resize", function(){
-                $(".fill-screen").css("height",window.innerHeight);
+        $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
             })
         });
     </script>
@@ -204,10 +219,10 @@
     <footer class="container-fluid ">
         <div class="row">
             <div class="col-xs-12">
-                    <h1>Footer</h1>
+                <h1>Footer</h1>
             </div>
         </div>
-        
+
         </div>
     </footer>
     <script src="js\classie.js"></script>
