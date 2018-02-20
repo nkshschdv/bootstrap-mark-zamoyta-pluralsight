@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scale=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fs.wallpaper.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css\jquery.fs.wallpaper.css">
-    
+    crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
     <script src="app.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id ="video-wallpaper">
         <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,7 +29,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="#top" href="#">
-                        <img src="images\site-logo-white.png" alt="">
+                        <img src="images/site-logo-white.png" alt="">
                     </a>
                 </div>
 
@@ -57,9 +57,9 @@
         </nav>
     </header>
     <div class="container-fluid">
-        <div class="background">
-
-        </div>
+            <!-- <video  autoplay loop muted poster="images/ocean.jpg" id="background">
+                    <source src="videos/ocean.mp4" type="video/mp4">
+                </video> -->
         <div class="content-filler"></div>
 
         <div class="row">
@@ -75,22 +75,7 @@
         </div>
 
     </div>
-    <script>
-        $(function () {
-            $(window).on("load resize", function () {
-                $(".fill-screen").css("height", window.innerHeight);
-            })
-        });
-        $(".background").background({
-        source: {
-        poster: "images/ocean.jpg",
-        webm: "videos/ocean.mp4" 
-        // ,
-        // mp4: "http://example.com/video.mp4",
-        // ogg: "http://example.com/video.ogv"
-    }
-});
-    </script>
+
     
     <footer class="container-fluid ">
         <div class="row">
@@ -101,9 +86,27 @@
 
         </div>
     </footer>
-    <script src="js\classie.js"></script>
-    <script src="js\cbpAnimatedHeader.js"></script>
-    <script src="js\jquery.fs.wallpaper.min.js"></script>
+    
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.fs.wallpaper.min.js"></script>
+    <script>
+         $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
+            })
+            $("#video-wallpaper").wallpaper({
+        source: {
+        poster: "images/ocean.jpg",
+    mp4: "videos/ocean.mp4" 
+        // ,
+        // webm: "http://example.com/video.mp4",
+        // ogg: "http://example.com/video.ogv"
+    }
+});
+        });
+       
+    </script>
 </body>
 
 </html>
